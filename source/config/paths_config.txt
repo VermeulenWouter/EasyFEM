@@ -1,0 +1,4 @@
+Project root directory: C:\Users\Wouter\Documents\Unief\2025-2026 - ingénieur civil M2 - Mémoire
+Caller file: C:\Users\Wouter\Documents\Unief\2025-2026 - ingénieur civil M2 - Mémoire\source\frpsma_bending_chapter4_plots.py
+Safe caller name: frpsma_bending_chapter4_plots_py
+Caller parent directory: C:\Users\Wouter\Documents\Unief\2025-2026 - ingénieur civil M2 - Mémoire\source

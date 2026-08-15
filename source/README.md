@@ -1,0 +1,1 @@
+This folder contains a few examples of code files used to generate and run Abaqus models with different configurations and test types (``<name>_models.py``), and code files used to plot the results (``<name>_plots.py``). Note these last files might not run given the experimental data is not included in this repository.

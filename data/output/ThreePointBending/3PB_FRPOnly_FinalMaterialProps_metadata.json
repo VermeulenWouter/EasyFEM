@@ -1,0 +1,176 @@
+{
+    "General": {
+        "Year": 2026,
+        "Month": 6,
+        "Day": 18,
+        "Time": "20:50:58.338588",
+        "Location": "ISAE-Supméca",
+        "Operator": "Wouter Vermeulen"
+    },
+    "Model type": {
+        "Type": "",
+        "ODB file": "/home/vermeulenw/TFE/models/ThreePointBending/FRPOnly/FinalMaterialProps.odb",
+        "Job name": "FinalMaterialProps",
+        "Steps": [
+            "BendingTest"
+        ],
+       "Damage initiation": {
+          "Time": {
+            "Value": 0.3658,
+            "Unit": "s"
+          }
+       }
+    },
+    "Test type": {
+        "Type": "3 point bending"
+    },
+    "Material": [
+        {
+            "name": "FRP Material v11",
+            "description": "",
+            "density": {
+                "Value": 1.2800000000000001e-09,
+                "Unit": "Mg/mm³"
+            },
+            "elasticity": {
+                "E_1": {
+                    "Value": 32776.0,
+                    "Unit": "MPa"
+                },
+                "E_2": {
+                    "Value": 32776.0,
+                    "Unit": "MPa"
+                },
+                "nu_12": {
+                    "Value": 0.3,
+                    "Unit": ""
+                },
+                "G_12": {
+                    "Value": 5100.0,
+                    "Unit": "MPa"
+                },
+                "G_13": {
+                    "Value": 2000.0,
+                    "Unit": "MPa"
+                },
+                "G_23": {
+                    "Value": 2000.0,
+                    "Unit": "MPa"
+                }
+            },
+            "hashin_damage": {
+                "X_T": {
+                    "Value": 535.8,
+                    "Unit": "MPa"
+                },
+                "X_C": {
+                    "Value": 291.98,
+                    "Unit": "MPa"
+                },
+                "Y_T": {
+                    "Value": 535.8,
+                    "Unit": "MPa"
+                },
+                "Y_C": {
+                    "Value": 291.98,
+                    "Unit": "MPa"
+                },
+                "S_L": {
+                    "Value": 70.0,
+                    "Unit": "MPa"
+                },
+                "S_T": {
+                    "Value": 70.0,
+                    "Unit": "MPa"
+                },
+                "alpha": 1
+            },
+            "hashin_damage_evolution": {
+                "G_ftc": {
+                    "Value": 27.5,
+                    "Unit": "Mg/s²"
+                },
+                "G_fcc": {
+                    "Value": 10.0,
+                    "Unit": "Mg/s²"
+                },
+                "G_mtc": {
+                    "Value": 27.5,
+                    "Unit": "Mg/s²"
+                },
+                "G_mcc": {
+                    "Value": 10.0,
+                    "Unit": "Mg/s²"
+                }
+            },
+            "hashin_damage_stabilisation": {
+                "eta_ft": 1e-07,
+                "eta_fc": 1e-07,
+                "eta_mt": 1e-07,
+                "eta_mc": 1e-07
+            }
+        },
+        null
+    ],
+    "Sample type": {
+        "FRP Sample": {
+            "Symmetry": "lateral+longitudinal",
+            "L0": {
+                "Value": 50.0,
+                "Unit": "mm"
+            },
+            "Width": {
+                "Value": 7.5,
+                "Unit": "mm"
+            },
+            "Length": {
+                "Value": 57.5,
+                "Unit": "mm"
+            },
+            "Thickness": {
+                "Value": 2.0,
+                "Unit": "mm"
+            },
+            "Number of plies": 8,
+            "Coarse mesh size": {
+                "Value": 1.25,
+                "Unit": "mm"
+            },
+            "Fine mesh size": {
+                "Value": 0.75,
+                "Unit": "mm"
+            },
+            "Fine mesh cells": [
+                {
+                    "Value": 55.0,
+                    "Unit": "mm"
+                }
+            ]
+        },
+        "Wires": null
+    },
+    "Columns": [
+        {
+            "Name": "Time",
+            "Unit": "s",
+            "Description": "Time points at which the variables were recorded."
+        },
+        {
+            "Name": "Displacement",
+            "Unit": "mm",
+            "Description": "Displacement in the loading direction (2 direction), taken from the centre node (= corner node in double symetry model).",
+            "abaqus_name": "U2"
+        },
+        {
+            "Name": "Force",
+            "Unit": "N",
+            "Description": "Reaction force in the loading direction (2 direction), by summing the contributionso f each node on the loading line.",
+            "abaqus_name": "RF2"
+        },
+        {
+            "Name": "Step index",
+            "Unit": null,
+            "Description": "An integer index of the step in the Abaqus model (starting from 1). Use the array in '['Model type']['Steps']' to get the step names corresponding to these indices."
+        }
+    ]
+}
